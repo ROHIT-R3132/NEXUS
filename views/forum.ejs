@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forum / Discussion Board</title>
+    <link rel="stylesheet" href="/forum.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+        <p>Engage in meaningful discussions, share experiences, and seek advice. Alumni can provide insights and motivation based on their real-world experiences.</p>
+    </header>
+
+    <!-- Forum Section -->
+    <section class="forum-section">
+        <h2>Topics</h2>
+        <div class="forum-list" id="forum-list">
+            <!-- Example Forum Topics -->
+            <div class="forum-card">
+                <h3>Career Path Advice</h3>
+                <p>Discussion on finding the right career path. Share your experiences and seek guidance from alumni.</p>
+                <button onclick="openDiscussion('Career Path Advice')">View Discussion</button>
+            </div>
+
+            <div class="forum-card">
+                <h3>Networking Tips</h3>
+                <p>Share your best tips for building a professional network. Learn how to connect with industry experts.</p>
+                <button onclick="openDiscussion('Networking Tips')">View Discussion</button>
+            </div>
+
+            <div class="forum-card">
+                <h3>Study Motivation and Guidance</h3>
+                <p>Many students struggle with motivation. Alumni share their insights on staying motivated and focused on long-term goals.</p>
+                <button onclick="openDiscussion('Study Motivation and Guidance')">View Discussion</button>
+            </div>
+        </div>
+
+        <!-- Post New Topic -->
+        <h3>Start a New Discussion</h3>
+        <form id="new-topic-form">
+            <div class="form-group">
+                <label for="topic-title">Topic Title</label>
+                <input type="text" id="topic-title" placeholder="Enter the title of the discussion" required>
+            </div>
+            <div class="form-group">
+                <label for="topic-description">Description</label>
+                <textarea id="topic-description" rows="4" placeholder="Enter a brief description of your topic" required></textarea>
+            </div>
+            <button type="submit">Post Topic</button>
+        </form>
+    </section>
+
+    <!-- Discussion Section (modal) -->
+    <section class="discussion-modal" id="discussion-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeDiscussion()">&times;</span>
+            <h2 id="discussion-title"></h2>
+            <div class="discussion-messages" id="discussion-messages">
+                <!-- Discussion messages go here -->
+            </div>
+            <div class="new-message">
+                <textarea id="message-input" rows="2" placeholder="Add your message..."></textarea>
+                <button id="send-message-btn">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alumni Network | Community Forum</p>
+    </footer>
+
+    <script src="/forum.js"></script>
+</body>
+</html>
+

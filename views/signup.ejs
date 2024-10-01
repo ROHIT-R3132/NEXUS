@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up - Student or Alumni</title>
+    <link rel="stylesheet" href="/signup.css">
+    <script>
+        function handleRoleChange() {
+            const role = document.getElementById("role").value;
+            const experienceField = document.getElementById("experience");
+
+            if (role === "student") {
+                experienceField.value = 0;
+                experienceField.disabled = true;
+            } else {
+                experienceField.value = '';
+                experienceField.disabled = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Nexus</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/feature">Features</a></li>
+                <li><a href="/contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="signup">
+        <div class="container">
+            <h1>Sign Up </h1>
+            <form>
+                <!-- Basic Information -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">I am a:</label>
+                    <select id="role" name="role" required onchange="handleRoleChange()">
+                        <option value="" disabled selected>Select your status</option>
+                        <option value="student">Student</option>
+                        <option value="alumni">Alumni</option>
+                    </select>
+                </div>
+
+                <!-- Academic Details -->
+                <h2>Academic Details</h2>
+                <div class="form-group">
+                    <label for="degree">Degree:</label>
+                    <input type="text" id="degree" name="degree" placeholder="e.g., Bachelor of Science in Computer Science" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="institution">Institution:</label>
+                    <input type="text" id="institution" name="institution" placeholder="e.g., Harvard University" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="graduation-year">Year of Graduation:</label>
+                    <input type="number" id="graduation-year" name="graduation-year" placeholder="e.g., 2022" required>
+                </div>
+
+                <!-- Professional Details -->
+                <h2>Professional Details</h2>
+                <div class="form-group">
+                    <label for="job-title">Current Job Title (if applicable):</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="e.g., Software Engineer">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Current Employer (if applicable):</label>
+                    <input type="text" id="company" name="company" placeholder="e.g., Google">
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" placeholder="e.g., 3">
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <textarea id="skills" name="skills" rows="4" placeholder="e.g., JavaScript, Python, Project Management"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="summary">Professional Summary:</label>
+                    <textarea id="summary" name="summary" rows="6" placeholder="Write a brief professional summary..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <p class="signin-link">Already have an account? <a href="/login">login</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Nexus. All rights reserved.</p>
+    </footer>
+</body>
+</html>

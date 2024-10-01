@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mentorship Requests</title>
+    <link rel="stylesheet" href="/mentor.css">
+</head>
+<body>
+    <header>
+        <h1>Mentorship Requests</h1>
+        <p>Request or offer mentorship to help guide career development and personal growth. Connect with experienced professionals to inspire students with real-world insights and career guidance from alumni.</p>
+    </header>
+
+    <!-- Mentorship Section -->
+    <section class="mentorship-section">
+        <h2>Request or Offer Mentorship</h2>
+        <form id="mentorship-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="role">Are you offering or requesting mentorship?</label>
+                <select id="role">
+                    <option value="requesting">Requesting Mentorship</option>
+                    <option value="offering">Offering Mentorship</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expertise">Field of Expertise / Interest</label>
+                <input type="text" id="expertise" placeholder="Enter your expertise or interest area">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- One-on-One Connect Section -->
+    <section class="connect-section">
+        <h2>One-on-One Connection</h2>
+        <div class="connect-options">
+            <div class="connect-option video-chat">
+                <h3>Video Chat</h3>
+                <p>Schedule a one-on-one video call with your mentor or mentee to discuss goals and strategies for career growth.</p>
+                <button onclick="startVideoCall()">Start Video Call</button>
+            </div>
+            <div class="connect-option message-chat">
+                <h3>Instant Messaging</h3>
+                <p>Send messages to your mentor or mentee to stay connected and get quick feedback or advice.</p>
+                <div class="chat-window" id="chat-window">
+                    <div class="messages" id="messages">
+                        <div class="message bot-message">Mentor: Hello! How can I assist you today?</div>
+                    </div>
+                    <input type="text" id="chat-input" placeholder="Type your message...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alumni Network | Mentorship Program</p>
+    </footer>
+
+    <script src="/mentor.js"></script>
+</body>
+</html>

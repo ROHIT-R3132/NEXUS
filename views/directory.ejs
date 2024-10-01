@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alumni Directory</title>
+    <link rel="stylesheet" href="/directory.css">
+</head>
+<body>
+    <header>
+        <h1>Alumni Directory</h1>
+        <p>Find and connect with fellow alumni through our comprehensive directory. Search by name, graduation year, industry, or field of expertise.</p>
+    </header>
+
+    <section class="search-section">
+        <form class="search-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Search by name">
+            </div>
+
+            <div class="form-group">
+                <label for="graduation-year">Graduation Year</label>
+                <input type="text" id="graduation-year" name="graduation-year" placeholder="e.g., 2020">
+            </div>
+
+            <div class="form-group">
+                <label for="industry">Industry</label>
+                <input type="text" id="industry" name="industry" placeholder="e.g., Technology">
+            </div>
+
+            <div class="form-group">
+                <label for="expertise">Field of Expertise</label>
+                <input type="text" id="expertise" name="expertise" placeholder="e.g., Software Engineering">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="directory-results">
+        <h2>Search Results</h2>
+        <!-- Example Result -->
+        <div class="alumni-card">
+            <h3>Prashant Kumar</h3>
+            <p>Graduation Year: 2027</p>
+            <p>Industry: Technology</p>
+            <p>Expertise: Software Engineering</p>
+        </div>
+        <!-- Add more alumni cards dynamically from the search -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alumni Network</p>
+    </footer>
+</body>
+</html>

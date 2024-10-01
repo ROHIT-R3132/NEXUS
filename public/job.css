@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.job-board-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+}
+
+.job-card h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.apply-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.apply-btn:hover {
+    background-color: #45a049;
+}
+
+.networking-section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.networking-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.networking-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.networking-tips {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.networking-tips ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.networking-tips li {
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Dashboard</title>
+    <link rel="stylesheet" href="dash1.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-pic">
+                    
+                </div>
+                <h2>Alumni Profile</h2>
+                <ul>
+                    
+                    <li onclick="location.href='/feature/alumini_directory'">Alumni Directory</li>
+                    <li onclick="location.href='/feature/alumini_event'">Events Calendar</li>
+                    <li onclick="location.href='/feature/alumini_job'">Job Board</li>
+                    <li onclick="location.href='/feature/alumini_mentor'">Mentorship Requests</li>
+                    <li onclick="location.href='/feature/alumini_forum'">Forum/Discussion Board</li>
+                    <li>feed</li>
+                    <li>Messages</li>
+                    <li>Job Listings</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-content">
+            <!-- Top Navigation Tabs -->
+            <div class="nav-tabs">
+                <button class="tab active">Alumni</button>
+                <button class="tab">Student</button>
+            </div>
+
+            <!-- Statistics and Mentorship Programs -->
+            <section class="mentorship-stats">
+                <div class="chart-section">
+                    <h3>Mentorship Programs</h3>
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="line-chart-section">
+                    <h3>Progress over Time</h3>
+                    <div class="line-chart"></div>
+                </div>
+            </section>
+
+            <!-- Profile Overview, Messages, Job Listings -->
+            <section class="overview">
+                <div class="profile-overview">
+                    <h3>Profile Overview</h3>
+                    <div class="profile-details">
+                        <p>Name: John Doe</p>
+                        <p>Email: john@example.com</p>
+                        <p>Location: New York</p>
+                    </div>
+                </div>
+
+                <div class="messages-overview">
+                    <h3>Messages</h3>
+                    <ul class="message-list">
+                        <li>Message from Emma Roberts</li>
+                        <li>Message from Sarah Clark</li>
+                    </ul>
+                </div>
+
+                <div class="job-listings">
+                    <h3>Job Listings</h3>
+                    <div class="job-count">554 Jobs Available</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

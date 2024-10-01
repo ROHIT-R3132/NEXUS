@@ -1,0 +1,130 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2F4F4F;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Main Content */
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #F4F4F9;
+}
+
+/* Top Tabs */
+.nav-tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #0056b3;
+}
+
+/* Mentorship Stats Section */
+.mentorship-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chart-section,
+.line-chart-section {
+    width: 48%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pie-chart,
+.line-chart {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* Overview Section */
+.overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-overview,
+.messages-overview,
+.job-listings {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-overview h3,
+.messages-overview h3,
+.job-listings h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.profile-details p,
+.message-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.job-count {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
